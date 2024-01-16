@@ -1,0 +1,147 @@
+:root{
+    --background-color: #3C462D;
+    --text-color: #D2CABC;
+    --text-color-heading: #D8A353;
+    --layer-color-1: #475137;
+    --layer-color-2: #54623F;
+    --btn-color: #6E8051;
+    --border-radius: 5px;
+
+}
+
+body{
+    height: 100vh;
+    font-family: Crimson Text;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    background: var(--background-color);
+    color: var(--text-color);
+}
+/* BASE CLASS */
+.primary__btn{
+    background: var(--btn-color);
+    color: var(--text-color);
+}
+
+.secondary__btn{
+    background: var(--text-color);
+    color: var(--btn-color);
+}
+/* HEADER SECTION START */
+
+body .header{
+    height: 3.5rem;
+    background: var(--text-color);
+    color: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.header__nav{
+    display: flex;
+}
+
+.header__nav-item{
+    padding: 0 1.5rem;
+    font-size: 1.2rem;
+}
+
+/* HEADER SECTION END*/
+
+/* HERO SECTION START */
+.hero{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__img{
+    background: url("./images/v1_6.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 40%;
+    height: 100%;
+}
+
+.hero__content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    width: 60%;
+}
+
+.hero__content-block{
+    width: 40%;
+    height: 25rem;
+    background: var(--layer-color-1);
+    position: relative;
+}
+
+.hero__content-block span{
+    font-family: Italianno;
+    font-size: 64px;
+    color: var(--text-color-heading);
+    position: absolute;
+    top: -2.8rem;
+    left: -0.5rem;
+}
+
+.hero__content-block p{
+    position: absolute;
+    width: 25rem;
+    top: 2rem;
+    left: -5rem;
+}
+
+.hero__content-block div{
+    position: absolute;
+    top: 11rem;
+    left: -5.5rem;
+}
+
+.hero__content-block > div > button{
+    font-family: Crimson Text;
+    font-weight: 600;
+    width: 150px;
+    padding: 1rem;
+    margin:0 .5rem;
+    border:none;
+    border-radius: var(--border-radius);
+    font-size: 1.1rem;
+}
+
+.ptn1{
+    position: absolute;
+    top: 10.5rem;
+    left:0;
+}
+
+.ptn1 svg{
+    width: 13rem;
+    opacity: 0.6;
+}
+
+.ptn2{
+    position: absolute;
+    right: 13rem;
+    top: 25rem;
+}
+
+.ptn2 svg{
+    opacity:0.8;
+}
+
+.ptn3{
+    position: absolute;
+    bottom: 5rem;
+    left: 5rem
+}
+/* HERO SECTION END */
