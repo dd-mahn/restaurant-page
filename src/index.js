@@ -12,4 +12,13 @@ content.appendChild(headerBar)
 content.appendChild(heroSection)
 content.appendChild(menuSection)
 
-heroSection.classList.add('d-off')
+menuSection.classList.add('d-off')
+
+const menuBtn = heroSection.querySelector('.menu__btn')
+const aboutBtn = heroSection.querySelector('.about__btn')
+
+menuBtn.addEventListener('click', () => {
+    heroSection.classList.add('d-off')
+    menuSection.classList.remove('d-off')
+})
+
