@@ -59,6 +59,7 @@ body .header{
 
 .header__nav-item:hover{
     border-bottom: 3px solid var(--btn-color);
+    cursor: pointer;
 }
 
 @keyframes slide-right-to-left {
@@ -157,7 +158,7 @@ body .header{
 .hero__content-block > div > button:hover{
     opacity:0.8;
     transition:.3s;
-
+    cursor: pointer;
 }
 
 .ptn1{
@@ -191,6 +192,7 @@ body .header{
 /* MENU SECTION START */
 .menu{
     position: relative;
+    height: 100vh;
 }
 
 .menu > img{
@@ -198,6 +200,7 @@ body .header{
     z-index: 2;
     top:1.5rem;
     width: 15%;
+    animation: slide-left-to-right linear 1s;
 }
 
 .menu__back-block{
@@ -219,6 +222,7 @@ body .header{
     right: 5rem;
     z-index: 2;
     top: 2rem;
+    animation: slide-right-to-left linear 1s;
 }
 
 .menu__text-block span{
@@ -242,6 +246,8 @@ body .header{
     top:6rem;
     padding:1rem 0 2rem;
     z-index: 2;
+    animation: slide-left-to-right linear 1s;
+
 }
 
 .menu__best-block > span{
@@ -300,6 +306,8 @@ body .header{
     position: absolute;
     top: 14rem;
     z-index: 2;
+    animation: slide-right-to-left linear 1s;
+
 }
 
 .menu__list-block span{
@@ -384,6 +392,7 @@ body .header{
     position: absolute ;
     right: 0;
     bottom: 5rem;
+    animation: slide-right-to-left linear 1s;
 }
 
 
