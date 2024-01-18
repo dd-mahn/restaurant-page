@@ -42,6 +42,9 @@ body .header{
     align-items: center;
     justify-content: space-between;
     padding: 0 2rem;
+    position: sticky;
+    z-index:3;
+    top:0;
 }
 
 .header__nav{
@@ -54,6 +57,31 @@ body .header{
     font-family: Italianno;
 }
 
+.header__nav-item:hover{
+    border-bottom: 3px solid var(--btn-color);
+}
+
+@keyframes slide-right-to-left {
+    from{
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-left-to-right {
+    from{
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
 /* HEADER SECTION END*/
 
 /* HERO SECTION START */
@@ -71,6 +99,7 @@ body .header{
     background-size: cover;
     width: 40%;
     height: 100%;
+    animation: slide-right-to-left linear 1s;
 }
 
 .hero__content{
@@ -81,6 +110,7 @@ body .header{
     align-items: center;
     padding: 2rem 0;
     width: 60%;
+    animation: slide-left-to-right linear 1s;
 }
 
 .hero__content-block{
@@ -104,11 +134,12 @@ body .header{
     width: 25rem;
     top: 2rem;
     left: -5rem;
+    font-size: 1.2rem;
 }
 
 .hero__content-block div{
     position: absolute;
-    top: 11rem;
+    top: 15rem;
     left: -5.5rem;
 }
 
@@ -121,6 +152,12 @@ body .header{
     border:none;
     border-radius: var(--border-radius);
     font-size: 1.1rem;
+}
+
+.hero__content-block > div > button:hover{
+    opacity:0.8;
+    transition:.3s;
+
 }
 
 .ptn1{
@@ -137,7 +174,7 @@ body .header{
 .ptn2{
     position: absolute;
     right: 13rem;
-    top: 25rem;
+    top: 29rem;
 }
 
 .ptn2 img{
@@ -292,7 +329,64 @@ body .header{
 
 /* ABOUT SECTION START */
 .about{
+    position: relative;
+    height: 100vh;
+    font-size: 1.2rem;
+}
+
+.about__img{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: url("./images/about.png");
+    background-size: cover;
+    z-index: 0;
+    top:0;
+    left:0;
+    animation: slide-left-to-right linear 1s;
+}
+
+.about__content{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    right: 10rem;
+    top: 5rem;
+    padding: 2rem;
+    background: var(--layer-color-2);
+    animation: slide-right-to-left linear 1s;
+}
+
+.about__content > span{
+    font-size: 3rem;
+    font-family:Italianno;
+    color: var(--text-color-heading);
+}
+
+.about__content > img{
+    margin: 3rem 0;
+}
+
+.about__content ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.about__content > ul > li{
+    text-align: center;
 
 }
+
+.about > img {
+    position: absolute ;
+    right: 0;
+    bottom: 5rem;
+}
+
+
+
 /* ABOUT SECTION END */
 
