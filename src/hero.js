@@ -13,8 +13,8 @@ export default function hero() {
         <span>We do vegan</span>
         <p>Welcome to GreenBites, Hanoi's plant-based paradise since 2020. Discover a culinary haven in the heart of the city, where vibrant salads and hearty mains celebrate the artistry of plant-based cuisine. Join us for a taste of cruelty-free dining at GreenBites.</p>
         <div>
-            <button class="primary__btn">Our Menu</button>
-            <button class="secondary__btn">About us</button>
+            <button class="primary__btn menu__btn">Our Menu</button>
+            <button class="secondary__btn about__btn">About us</button>
         </div>
     `;
 
